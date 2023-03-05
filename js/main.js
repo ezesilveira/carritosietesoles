@@ -59,3 +59,7 @@ function limpiarCarrito() {
     total = 0
     actualizaValores(productos, envio, total);
 }
+function comprar() {
+    alert("Gracias por su compra!");
+    limpiarCarrito();
+}
