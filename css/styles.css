@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+@font-face {
+  font-family: "QuinchoScript";
+  src: url("../fonts/QuinchoScript_PersonalUse.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Questrial";
+  src: url("../fonts/Questrial-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+*::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: Questrial;
+  color: #6C0404;
+}
+
+.barra {
+  font-family: QuinchoScript;
+  font-size: 24px;
+  background-image: url("../img/fondo.jpg");
+}
+.barra li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.logo {
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.letraNegra {
+  color: #000000;
+}
+
+.tarjetaImagen {
+  width: 40vh;
+  height: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tarjetaCaja {
+  background: #6C0404;
+  color: #FFFFFF;
+}
+
+.boton {
+  background: #6C0404;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 3px;
+}
+
+.footerx {
+  font-family: Questrial !important;
+  color: #FFFFFF !important;
+  background-image: url("../img/fondo.jpg");
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+svg {
+  width: 48px;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* circle {
+    fill: #FFFFFF;
+} */
+path {
+  fill: #25d366;
+}
+
+.navbar-toggler-icon {
+  vertical-align: middle !important;
+}
+
+/* Edgardo Ezequiel Silveira 2023 CoderHouse *//*# sourceMappingURL=styles.css.map */
