@@ -13,13 +13,19 @@ $offcanvas-horizontal-width: 200px!important;
 
 @font-face {
     font-family: 'QuinchoScript';
-    src: url('../fonts/QuinchoScript_PersonalUse.ttf') format('truetype');
+src: url('../fonts/QuinchoScript_PersonalUse.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'Questrial';
     src: url('../fonts/Questrial-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueLt.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -36,6 +42,9 @@ $offcanvas-horizontal-width: 200px!important;
         text-decoration: none;
         color: $color2;
     }
+}
+.fontHelvetica{
+    font-family: HelveticaNeue;
 }
 .logo {
     font-size: 48px;
@@ -54,16 +63,18 @@ $offcanvas-horizontal-width: 200px!important;
     background: $color1;
     color: $color2;
 }
-.boton {
+.botonProductos {
     background: $color1;
     color: $color2;
     border: 0px;
-    border-radius: 3px;
 }
 .footerx {
-    font-family: Questrial !important;
+    font-family: HelveticaNeue !important;
     color: $color2 !important;
     background-image: url("../img/fondo.jpg");
+}
+.totalCarrito{
+    font-size: 2rem;
 }
 #whatsapp {
     position: fixed;

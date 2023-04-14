@@ -16,6 +16,12 @@ body {
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLt.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 *::-webkit-input-placeholder {
   font-size: 14px;
   font-family: Questrial;
@@ -30,6 +36,10 @@ body {
 .barra li a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.fontHelvetica {
+  font-family: HelveticaNeue;
 }
 
 .logo {
@@ -53,17 +63,20 @@ body {
   color: #FFFFFF;
 }
 
-.boton {
+.botonProductos {
   background: #6C0404;
   color: #FFFFFF;
   border: 0px;
-  border-radius: 3px;
 }
 
 .footerx {
-  font-family: Questrial !important;
+  font-family: HelveticaNeue !important;
   color: #FFFFFF !important;
   background-image: url("../img/fondo.jpg");
+}
+
+.totalCarrito {
+  font-size: 22px;
 }
 
 #whatsapp {

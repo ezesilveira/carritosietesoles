@@ -78,7 +78,7 @@
     <!-- Final Encabezado - Navbar -->
     <!-- Inicio Productos Inicio -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid fontHelvetica">
             <div class="row ">
                 <div class="col-lg-12 d-flex flex-wrap justify-content-center align-content-center" id="productos">
 
@@ -88,7 +88,7 @@
     </section>
     <!-- Final Productos Inicio -->
     <section>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade fontHelvetica" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -119,35 +119,50 @@
         </div>
     </section>
     <section>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end fontHelvetica" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Comprass</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="card mb-3">
-                    <div class="card-body py-1">
-                        <h5 class="card-title">Envio</h5>
-                        <select class="form-select" name="" id="envioSeleccion">
-                            <option value="0">Retiro en local</option>
-                            <option value="600">Envio directo en la ciudad</option>
-                            <option value="2000">Envio a ciudades proximas</option>
-                        </select>
-                        <br>
-                        <a href="#" class="btn btn-primary" id="botonEnvio">Envio</a>
+                <div class="container">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">MI COMPRA</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <p>Hola! <span class="badge bg-success" id="usuario"></span></p>
                     </div>
                 </div>
-                <div class="card mb-3">
-                    <div class="card-body py-1">
-                        <h5 class="card-title">Carrito</h5>
-                        <p>Hola! <span class="badge bg-success" id="usuario"></span></p>
-                        <ul class="list-group" id="productosCarrito">
-                        </ul>
-                        <p>Envio: <span id="envio"></span>$</p>
-                        <p>Total: <span id="total"></span>$</p>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <hr class="bg-dark border-2 border-top border-dark">
+                    <p>Envio</p>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <select class="form-select" name="" id="envioSeleccion">
+                                <option value="0">Retiro en local <b>$0</b></option>
+                                <option value="600">Envio directo en la ciudad <b>$600</b></option>
+                                <option value="2000">Envio a ciudades proximas <b>$2000</b></option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="btn btn-primary botonProductos" id="botonEnvio">Envio</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col py-2">
+                            <ul class="list-group" id="productosCarrito"></ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p>Subtotal: <b>$<span id="Subtotal"></span></b></p>
+                        <p>Envio: <b>$<span id="envio"></span></b></p>
+                        <p id="totalCarrito">Total: <b>$<span id="total"></span></b></p>
                         <p>Cantidad: <span id="carrito-cantidad" class="badge bg-primary"></span></p>
-                        <a href="#" class="btn btn-danger" id="botonLimpiarCarrito">Limpiar</a>
-                        <a href="#" class="btn btn-primary" id="finalizarCompra">Finalizar compra</a>
+                        <a href="#" class="btn btn-primary" id="botonLimpiarCarrito">Vaciar Carrito</a>
+                        <a href="#" class="btn btn-primary botonProductos" id="finalizarCompra">Finalizar compra</a>
                     </div>
                 </div>
             </div>
